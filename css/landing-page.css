@@ -137,6 +137,17 @@ form label {
 	text-align: center;
 }
 
+.panel.bill-single-info .vote-info {
+	margin-top: -15px;
+	margin-bottom: -13px;
+	margin-right: -20px;
+	padding-top: 15px;
+	padding-bottom: 13px;
+	color: #FFF;
+	text-align: center;
+	margin-left: 10px;
+}
+
 .panel .vote-info.success {
 	background: #5bb679;
 }
@@ -208,21 +219,25 @@ form label {
 	border: 0;
 }
 
-.panel .bill-info h2.bill-title {
+.bill-info h2.bill-title {
 	margin: 5px 0 15px;
 	font-size: 18px;
 	font-weight: 600;
 }
 
-.panel .bill-info hr {
+.panel.bill-single-info .bill-info h2.bill-title {
+	font-size: 22px;
+}
+
+.bill-info hr {
 	margin: 15px 0 10px;
 }
 
-.panel .bill-info .bill-meta p {
+.bill-info .bill-meta p {
 	margin: 0;
 }
 
-.panel .bill-info .bill-meta .download-bill {
+.bill-info .bill-meta .download-bill {
 	margin-left: 15px;
 }
 
@@ -256,6 +271,19 @@ form label {
 .panel.aside button.btn-danger {
 	color: #c04d4d;
 	border-color: #c04d4d;
+}
+
+.user-info img {
+	border: 4px solid #FFF;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.user-info h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 5px;
 }
 
 @media (max-width: 767px) {

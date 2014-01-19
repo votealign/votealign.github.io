@@ -91,6 +91,21 @@ form label {
 	padding: 0;
 }
 
+.panel.dark {
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+}
+
+.panel.dark .form-control,
+.panel.dark button {
+	background: #000;
+	color: #FFF;
+	border: 1px solid #323232;
+}
+.panel.dark hr {
+	border-color: #CCC;
+}
+
 .panel.rep-info {
 	background: url(../media/bg-rep-page.jpg);
 	background-size: cover;

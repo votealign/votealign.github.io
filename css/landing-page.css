@@ -87,6 +87,10 @@ form label {
 	box-shadow: none;
 }
 
+.panel.panel-default {
+	padding: 0;
+}
+
 .panel.rep-info {
 	background: url(../media/bg-rep-page.jpg);
 	background-size: cover;

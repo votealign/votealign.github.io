@@ -1,11 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700);
+
 body, html {
 	height: 100%;
 	width: 100%;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
+}
+
+body {
+	background: #FFF;
+	font-weight: normal;
+}
+
+body.internal {
+	background: #f3f3f3;
+}
+
+.img-fixed {
+	display: inline-block;
 }
 
 .lead {
@@ -48,6 +63,182 @@ body, h1, h2, h3, h4, h5, h6 {
 	/*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
 }
 
+li {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+form label {
+	color: #323232;
+}
+
+.intro-header .panel {
+	text-align: left;
+}
+
+.panel {
+	background: #FFF;
+	min-height: 20px;
+	padding: 15px 19px 13px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.panel.rep-info {
+	background: url(../media/bg-rep-page.jpg);
+	background-size: cover;
+}
+
+.panel.rep-info .userphoto {
+	margin-top: -16px;
+	margin-bottom: -14px;
+	margin-left: -5px;
+	padding-top: 16px;
+	padding-bottom: 14px;
+	color: #FFF;
+	background: rgba(0,0,0,0.6);
+}
+
+.panel.rep-info .userphoto .img-circle {
+	border: 4px solid #FFF;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.panel .vote-info {
+	margin-top: -15px;
+	margin-bottom: -13px;
+	margin-left: -5px;
+	padding-top: 15px;
+	padding-bottom: 13px;
+	color: #FFF;
+	text-align: center;
+}
+
+.panel .vote-info.success {
+	background: #5bb679;
+}
+
+.panel .vote-info.fail {
+	background: #c04d4d;
+}
+
+.panel .vote-info.novote {
+	background: #8b8b8b;
+}
+
+.panel .vote-info .official-vote,
+.panel .vote-info .my-vote {
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 400;
+}
+
+.panel .vote-info .my-vote {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.panel .vote-info .vote-label {
+	font-size: 35px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.panel .vote-info hr {
+	margin: 5px 30px;
+	background: #addbbc;
+	border-color: #addbbc;
+}
+
+.panel .vote-info button.answer {
+	width: 150px;
+}
+
+.btn-success {
+	background: #459860;
+	border: 0;
+}
+
+.btn-success.dropdown-toggle {
+	background: #4d8a61;
+}
+
+.btn-danger {
+	background: #990000;
+	border: 0;
+}
+
+.btn-danger.dropdown-toggle {
+	background: #6f0000;
+}
+
+.btn-info {
+	background: #5d5d5d;
+	border: 0;
+}
+
+.btn-info.dropdown-toggle {
+	background: #4c4c4c;
+}
+
+.btn-plain {
+	border: 0;
+}
+
+.panel .bill-info h2.bill-title {
+	margin: 5px 0 15px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.panel .bill-info hr {
+	margin: 15px 0 10px;
+}
+
+.panel .bill-info .bill-meta p {
+	margin: 0;
+}
+
+.panel .bill-info .bill-meta .download-bill {
+	margin-left: 15px;
+}
+
+.panel.aside .hr {
+	margin: 10px 0;
+}
+
+.panel.aside h6 {
+	margin: 0 0 5px -15px;
+	font-size: 14px;
+}
+
+.panel.aside p {
+	font-size: 12px;
+	margin-left:  -15px;
+}
+
+.panel.aside button {
+	margin: 0 0 0 -35px;
+}
+
+.panel.aside button {
+	background: transparent;
+	color: #459860;
+	border: 1px solid #459860;
+	border-radius: 0;
+	font-weight: 500;
+	font-family: "Open Sans", "Helvetica", Calibri, sans-serif;
+}
+
+.panel.aside button.btn-danger {
+	color: #c04d4d;
+	border-color: #c04d4d;
+}
+
 @media (max-width: 767px) {
 	.intro-message {
 		padding-bottom: 15%;
@@ -82,6 +273,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .content-section-a {
 	background-color: #f3f3f3;
 	padding: 50px 0;
+	overflow: hidden;
 }
 
 .content-section-b {
@@ -122,6 +314,7 @@ body, h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 }
 
+
 @media (max-width: 1199px) {
 	ul.banner-social-buttons {
 		float: left;
@@ -144,6 +337,23 @@ body, h1, h2, h3, h4, h5, h6 {
 
 	ul.banner-social-buttons > li:last-child {
 		margin-bottom: 0;
+	}
+	.panel.filter,
+	.panel.filter .text-right { text-align: center;}
+	.panel .vote-info {
+		margin: 0 0 20px;
+	}
+	.panel .bill-meta {
+		text-align: center;
+	}
+	.panel .bill-meta p {
+		margin: 5px 0 10px;
+	}
+	.panel .bill-meta .text-right {
+		text-align: center;
+	}
+	.panel.aside {
+		display: none;
 	}
 }
 

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sign In | VoteAlign</title>
+    <meta name="description" content="User-created summarizes of upcoming bills help you stay informed. Stay involved by indicating how you would vote. Get notified you when the final vote occurs to compare your representatives to you." />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+</head>
+
+<body class="internal">
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://votealign.org"><img src="media/logo_va-300.png" height="30"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="page-dashboard.html">Dashboard</a>
+                    </li>
+                    <li><a href="page-team.html">My Team</a>
+                    </li>
+                    <li><a href="signin.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+        <div class="container">
+
+            <div class="panel rep-info">
+                <div class="row">
+                    <div class="col-lg-3 text-center userphoto">
+                        <img src="media/users/mi-macgregor-peter.jpg" class="img-circle img-responsive">
+                        <h3>Peter MacGregor</h3>
+                        <p>District 73</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel filter">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="btn-group">
+                          <button class="btn btn-default btn-plain dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-align-justify" style="margin-right: 10px;"></span> All Bills <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Federal Bills</a></li>
+                            <li><a href="#">State Bills</a></li>
+                            <li><a href="#">District/Community Bills</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 text-right">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                            Filter by Issue:
+                            <div class="btn-group" style="margin-right: 15px;">
+                              <button class="btn btn-default dropdown-toggle text-left" style="margin-left: 10px;" type="button" data-toggle="dropdown">
+                                All Issues <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu text-left" role="menu">
+                                <li><a href="#">Federal Bills</a></li>
+                                <li><a href="#">State Bills</a></li>
+                                <li><a href="#">District/Community Bills</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            Sort By:
+                            <div class="btn-group">
+                              <button class="btn btn-default dropdown-toggle text-left" style="margin-left: 10px;" type="button" data-toggle="dropdown">
+                                Most Recent <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu text-left" role="menu">
+                                <li><a href="#">Federal Bills</a></li>
+                                <li><a href="#">State Bills</a></li>
+                                <li><a href="#">District/Community Bills</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search all bills..">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 ">
+                    <div class="panel">
+                        <div class="info-block">
+                            <p><strong>Lansing Office</strong></p>
+                            <p>Anderson House Office Bldg.<br>
+                            N-1092 House Office Building<br>
+                            Lansing, MI 48933</p>
+
+                            <p><strong>Mailing Address</strong></p>
+                            <p>N-1092 House Office Building<br>
+                            P.O. Box 30014<br>
+                            Lansing, MI 48909</p>
+
+                            <p><strong>Call Your Representative</strong></p>
+                            <p>Phone: (517) 373-0218<br>
+                            Toll Free: (855) 347-8073</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info success">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">Yes</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success answer">Yes</button>
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info fail">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">No</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger answer">Yes</button>
+                                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info novote">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">Yes</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info answer">Vote Now</button>
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info fail">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">Yes</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger answer">No</button>
+                                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info success">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">Yes</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success answer">Yes</button>
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info success">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">Yes</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success answer">Yes</button>
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info fail">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">No</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger answer">Yes</button>
+                                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info novote">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">N/A</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info answer">Yes</button>
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info success">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">Yes</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success answer">Yes</button>
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel">
+                                <div class="row">
+                                    <div class="col-lg-3 vote-info success">
+                                        <p class="official-vote">Peter's Vote</p>
+                                        <p class="vote-label">Yes</p>
+                                        <hr>
+                                        <p class="my-vote">My Vote</p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success answer">Yes</button>
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                              <span class="caret"></span>
+                                              <span class="sr-only">Change vote</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#">Yes</a></li>
+                                              <li><a href="#">No</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-9 bill-info">
+                                        <h2 class="bill-title">HB 4001: "Freedom of Information: Fees for Records &amp; Copies"</h2>
+                                        <p>House Bill 4001 would amend the Freedom of Information Act to set statewide standards that would govern the costs for reproducing records requested under the Freedom of Information Act.</a>
+                                        <hr>
+                                        <div class="row bill-meta">
+                                            <div class="col-lg-6">
+                                                <p><a href="page-bill-single.html">Read More</a><a class="download-bill" target="_blank" href="http://www.legislature.mi.gov/documents/2013-2014/billanalysis/House/pdf/2013-HLA-4001-F4FDE520.pdf">Download Bill</a> (.PDF)</p>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <p>Votealign Community: Yes - 58%, No - 42%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Bill -->
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="copyright text-muted small">Copyright &copy; VoteAlign 2014 | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
